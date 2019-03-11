@@ -1,0 +1,86 @@
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+
+    <!-- CSS style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jQuery -->
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+</head>
+<header>
+    <h1>Music Theory Quiz!</h1>
+</header>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="start-button">
+            <button id="start">Start</button>
+        </div>
+        <br>
+        <div id="counter">You have <span id="countDown">30</span> seconds.</div>
+        <br>
+        <div id="question-page">
+            <form>
+                <label>What four degrees of the Major Scale create a Major 7 chord?</label>
+                <br>
+                <input type = "radio" id = "radio" name = "answer1" value = "red">I-III-V-VII
+                <br>
+                <input type = "radio" id = "radio" name = "answer1" value = "purple">I-II-III-VII
+                <br>
+                <input type = "radio" id = "radio" name = "answer1" value = "orange">I-III-VI-VII
+                <br>
+                <label>What chord progression is a ii(half diminished 7) - V7 - i ?</label>
+                <br>
+                <input type = "radio" id = "radio" name = "answer2" value = "black">(E G# B D) -> (A C# E G) -> (D F A)
+                <br>
+                <input type = "radio" id = "radio" name = "answer2" value = "tan">(E G Bb D) -> (A C# E G) -> (D F A)
+                <br>
+                <input type = "radio" id = "radio" name = "answer2" value = "white">(E G# B D) -> (A C# E G#) -> (D F A)
+                <br>
+                <label>What is the fifth mode of the Harmonic Minor Scale?</label>
+                <br>
+                <input type = "radio" id = "radio" name = "answer3" value = "blonde">Ionian #5
+                <br>
+                <input type = "radio" id = "radio" name = "answer3" value = "lime">Lydian #2
+                <br>
+                <input type = "radio" id = "radio" name = "answer3" value = "yellow">Phyrgian Dominant
+                <br>
+                
+            </form>
+            
+
+            <button id="done">Done</button>
+            
+        </div>
+        <div id="results">
+            <h1>Results</h1>
+            <p>Correct<span id= "correct">0</span></p>
+            <p>Incorrect<span id= "incorrect">0</span></p>
+            <p>Unanswered<span id= "unanswered">0</span></p>
+        </div>
+
+
+    </div>
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- JS code -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+
+</body>
+
+</html>
